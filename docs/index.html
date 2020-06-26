@@ -111,21 +111,21 @@
 	<div class="row my-4">
       <div class="col-12">
 		<h4>Manufacture Details</h4>
-        <table id="DevicesDetails" class="display nowrap" style="width:100%">
+        <table id="DevicesDetails" class="display" style="width:100%">
 		<thead>
 			<tr>
 				<th>Name</th>
 				<th>ManufactureName</th>
 				<th>OS</th>
 				<th>InfoOS</th>
-				<th>Length</th>
+				<!-- <th>Length</th>
 				<th>Width</th>
 				<th>bodyWeight</th>
 				<th>FastCharging</th>
-				<th>HeadphoneJack</th>
+				<th>HeadphoneJack</th> -->
 				<th>Chipsets</th>
-				<th>InternalMemorySize</th>
-				<th>Ram</th>
+				<!-- <th>InternalMemorySize</th>
+				<th>Ram</th> -->
 			</tr>
 			</thead>
 		</table>
@@ -165,7 +165,6 @@
                 data: 'URL'
             } ]
 		} );
-	} );
 	
 	$('#Devices').DataTable( {
 			"ajax": {
@@ -185,12 +184,13 @@
 			"columns": [
 			{ data : 'Name' }, {data:'ManufactureName'},
 			{ data : 'OS' }, {data:'InfoOS'},
-			{ data : 'Length' }, {data:'Width'},
-			{ data : 'bodyWeight' }, {data:'FastCharging'},
-			{ data : 'HeadphoneJack' }, {data:'Chipsets'},
-			{ data : 'InternalMemorySize' }, {data:'Ram'}
+			//{ data : 'Length' }, {data:'Width'},
+			//{ data : 'bodyWeight' }, {data:'FastCharging'},
+			//{ data : 'HeadphoneJack' }, 
+			{data:'Chipsets'}
+			//{ data : 'InternalMemorySize' }, {data:'Ram'}
              ]
-		} ); */
+		} ); 
 	} );
 	
   </script>
